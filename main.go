@@ -39,7 +39,8 @@ func indexHandler( w http.ResponseWriter, r *http.Request) {
 
   name_string := strings.Join(names, ", ")
 
-  fmt.Fprintf(w, "<h1>Team members</h1><p>%s</p><h2>Total Score</h2><p>%d</p>", name_string, total)
+  fmt.Fprintf(w, "<h1>Team members</h1><p>%s</p><h2>Total Score</h2><p>%d</p>",
+              name_string, total)
 }
 
 func main() {
